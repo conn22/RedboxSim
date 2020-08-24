@@ -12,6 +12,10 @@ public class Product {
 		type = -1;
 	}
 	
+	public boolean equals(Product p) {
+		return this.title.equals(p.getTitle()) && (this.type == p.getType());
+	}
+	
 	public String getTitle() {
 		return title;
 	}
